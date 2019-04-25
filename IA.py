@@ -2,6 +2,7 @@
 import math 
 n = int(input('How many slots are there? '))
 s=[]
+k=[]
 # A function to print the prime factors of n 
 def primeFactors(n):
 	i=1
@@ -11,11 +12,17 @@ def primeFactors(n):
 	        j=1
 	        while(j<=i):
 	            if(i%j==0):
-	                k=k+1
+	                q=q+1
 	            j=j+1
-	        if(k==2):
+	        ifqk==2):
 	            s.append(i)
 	    i=i+1	
 primeFactors(n)
 for x in range(len(s)):
 	print (s[x])       
+#Function which prints all of the possible sums of the prime factors of n        
+def primeSum(n):
+	g=1
+	while g<=len(s):
+		d=s[(len(s))-(len(s)-g)]
+		k.append(d)
