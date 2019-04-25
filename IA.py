@@ -2,24 +2,20 @@
 import math 
 n = int(input('How many slots are there? '))
 s=[]
-s.append(n)
 # A function to print the prime factors of n 
-def primeFactors(s):  
-    # reducing n to an odd number 
-    while n % 2 == 0: 
-       return (int(2)), 
-       s = n / 2
-           
-    for i in range(3,int(math.sqrt(n))+1,2): 
-          
-        # adding values of n to set s
-        while n % i== 0: 
-             c=int(n/i)
-             s.append(c)        
-    # Where n is a prime 
-    # > 2
-    if n > 2: 
-        pass	
+def primeFactors(n):
+	i=1
+	while(i<=n):
+	    k=0
+	    if(n%i==0):
+	        j=1
+	        while(j<=i):
+	            if(i%j==0):
+	                k=k+1
+	            j=j+1
+	        if(k==2):
+	            s.append(i)
+	    i=i+1	
 primeFactors(n)
-print (s)
-        
+for x in range(len(s)):
+	print (s[x])       
