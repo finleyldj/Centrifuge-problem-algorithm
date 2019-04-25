@@ -22,8 +22,7 @@ def primeFactors(n):
     # Condition if n is a prime 
     # number greater than 2 
     if n > 2: 
-        yied (int(n))
-	
+        yied (int(n))	
 for n in primeFactors(n):
 	print(n)
 try:
@@ -33,7 +32,8 @@ except TypeError:
 	pass
 #Function which prints all of the possible sums of the prime factors of n        
 #def sumofprimes(n):
-	#while n<=s:
+	#while s<=n:
+		#yield (s+)
 		
 #k= int(input('How many test tubes do you have?'))
 #if k==n:
